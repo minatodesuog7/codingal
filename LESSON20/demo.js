@@ -14,6 +14,7 @@ function sum(a,b,c,d,e) {
 }
 // console.log(result) AS U SEE YOU CAN'T PRESENT THE RESULT OUTSIDE THE FUNCTION!! 
 
+
 var a = - sum(800, 564654, 5467, 5676575, 213324)
 console.log(a)
 

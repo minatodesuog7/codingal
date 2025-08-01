@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements</title>
+  <style>
+    body {
+      background-color: #f4f4f4;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: blueviolet;
+      text-align: center;
+    }
+
+    h1::before {
+      content: "💡 ";
+    }
+
+    h1::after {
+      content: " 🔧";
+    }
+
+    .main p {
+      font-size: 18px;
+      margin: 20px 0;
+      padding: 12px;
+      background: white;
+      border-left: 4px solid red;
+    }
+
+    .intro::first-letter {
+      font-size: 150%;
+      color: rgba(158, 46, 46, 0.596);
+      font-weight: bold;
+    }
+
+    ::selection {
+      background: #90caf9;
+      color: black;
+    }
+
+    .main p:not(.skip) {
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .list li:nth-child(odd) {
+      background: white;
+      padding: 5px 10px;
+    }
+
+    [data-tag] {
+      color : blue;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background: #1a73e8;
+      padding: 8px 16px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    a:hover {
+      background: #0d47a1;
+    }
+
+    button {
+      font-size: 16px;
+      padding: 10px 18px;
+      background: transparent;
+      color: #1a73e8;
+      border: 2px solid #1a73e8;
+      margin-top: 20px;
+    }
+
+    button::before {
+      content: "👉 ";
+    }
+
+    button::after {
+      content: " 👈";
+    }
+  </style>
+</head>
+<body>
+  <h1>Pseudo Elements</h1>
+
+  <div class="main">
+    <p class="intro"> NOTHING JUST REQUEST !!</p>
+    <p data-tag="highlight">I D C</p>
+    <p class="skip"> please GIVE ME FULL POINTS</p>
+    <p>I WAS HAVING MY PT</p>
+
+    <ul class="list">
+        <!-- FIRST TIME SERIOUSLY I WROTE THIS -->
+      <li>before & after</li>
+      <li>first-letter</li>
+      <li>selection</li>
+      <li>attribute selector</li>
+    </ul>
+
+    <a href="https://www.youtube.com/watch?v=5JuO2Ai4c0k">Click Me</a><br><br>
+    <button>CRIIINGEEE!!!</button>
+  </div>
+</body>
+</html>
