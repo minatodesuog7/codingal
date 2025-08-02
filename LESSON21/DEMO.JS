@@ -20,3 +20,9 @@ console.log(Math.ceil(7.4))
 var tacos = 'walid eats food'
 console.log(tacos.toUpperCase())
 
+var i 
+for(i=0; i<30; i++){
+    console.log("I LOVE TO EAT MANCHRIANS")
+    console.log("NOODLES INCLUDED")
+}
+
